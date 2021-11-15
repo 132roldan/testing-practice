@@ -31,6 +31,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
+	 var result = quotient(2, 2, 2, 2);
+  if (result !== 1) throw new Error('Expected quotient(2, 2, 2, 2) to be an error:. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
