@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient(a,b = 1) {
+function quotient(a =0, b = 1) {
 	if (b == 0){
 	return console.log('error');
 	}else {
@@ -45,6 +45,8 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+	 var result = quotient();
+  if (result !== 0) throw new Error('Expected quotient() to be an error:. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
