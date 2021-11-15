@@ -1,8 +1,29 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
-
+function sum(a = 0,b = 0){
+return a+b;
+}	
+function difference(a = 0,b = 0) {
+ return a-b;
+}
+function product(a = 0, b = 1) {
+	return a*b;
+}
+function quotient(a =0, b = 1) {
+	if (b == 0){
+	return console.log('error');
+	}else {
+	return a/b;
+	}
+}
+function calc(op,a,b) {
+	switch (op) {
+		case 'add': return sum(a,b);
+		case 'subtract': return difference(a,b);
+		case 'multiply': return product(a,b);
+		case 'divide' : return quotient(a,b);	
+	}
 }
 
 // ==================================================
