@@ -1,7 +1,7 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function quotient(a,b) {
+function quotient(a,b = 1) {
 	if (b == 0){
 	return console.log('error');
 	}else {
@@ -38,6 +38,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
+	 var result = quotient(2);
+  if (result !== 2) throw new Error('Expected quotient(2) to be an error:. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 5
